@@ -1,6 +1,5 @@
-# Snake
-Snake is a clone of the classic game that we all used to play on our cellphones. You play this game 
-on a simulated terminal, with a textual interface.
+# Cycle
+Cycle is a game where players try to cut each other off using cycles that leave a trail behind them.
 
 ## Getting Started
 ---
@@ -20,8 +19,29 @@ project folder. Select the main module inside the hunter folder and click the "r
 The project files and folders are organized as follows:
 ```
 root                    (project root folder)
-+-- snake               (source code for game)
++-- cycle               (source code for game)
   +-- game              (specific game classes)
+    +-- casting           
+      +-- actor                     (traits to use for actors)
+      +-- cast                      (keeps track of what is in play)
+      +-- food  CHANGE?             ()
+      +-- score                     (keeps track of score)
+      +-- cycle                     (creates cycles)
+    +-- directing         
+      +-- director                  (director of game)
+    +-- scripting
+      +-- action
+      +-- control_actors_action     (controls snake)
+      +-- draw_actors_action        (create actors in game space)
+      +-- handle_collisions_action  (control what happens when when things collide)
+      +-- move_actors_action        (control movement in game space)
+      +-- script                    (keep track of actions)
+    +-- services
+      +-- keyboard_service          (gets player input for movement)
+      +-- video_service             (draws game on screen)
+    +-- shared
+      +-- color                     (sets colors & opacity)
+      +-- point                     (provides info about where actors are located)
   +-- __main__.py       (entry point for program)
 +-- README.md           (general info)
 ```
@@ -33,4 +53,11 @@ root                    (project root folder)
 
 ## Authors
 ---
-* TODO: Add your name and email here
+## Authors
+*Logan Andrus lbandrus@byui.edu
+*Keeley Imlah wil11070@byui.edu
+*Felipe Valencia fevacla@byui.edu
+*Kathryn Thompson thompson21057@byui.edu
+*Morgan Luke morganluke@byui.edu
+
+*Team 9 CSE-210 Winter 2022
