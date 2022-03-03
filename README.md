@@ -17,7 +17,7 @@ project folder. Select the main module inside the hunter folder and click the "r
 ## Project Structure
 ---
 The project files and folders are organized as follows:
-```
+
 root                    (project root folder)
 +-- cycle               (source code for game)
   +-- game              (specific game classes)
