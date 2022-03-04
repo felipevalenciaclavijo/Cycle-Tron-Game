@@ -4,7 +4,7 @@ from constants import GREEN
 from constants import RED
 
 from game.casting.cast import Cast
-from game.casting.food import Food
+from game.casting.growth import Growth
 from game.casting.score import Score
 from game.casting.cycle import Cycle
 from game.scripting.script import Script
@@ -23,7 +23,7 @@ def main():
     
     # create the cast
     cast = Cast()
-    cast.add_actor("foods", Food())
+    cast.add_actor("growths", Growth())
     # cast.add_actor("snakes", Snake())
     cast.add_actor("cycles", Cycle(constants.RED))
     cast.add_actor("cycles", Cycle(constants.GREEN))
@@ -38,6 +38,7 @@ def main():
     script.add_action("update", MoveActorsAction())
     script.add_action("update", HandleCollisionsAction())
     script.add_action("output", DrawActorsAction(video_service))
+    script.add_action("update", Growth())
     
     director = Director(video_service)
     director.start_game(cast, script)
