@@ -1,8 +1,7 @@
 from game.scripting.action import Action
-from game.casting.growth import Growth
 
 
-class DrawActorsAction(Action, Growth):
+class DrawActorsAction(Action):
     """
     An output action that draws all the actors.
     
@@ -32,7 +31,7 @@ class DrawActorsAction(Action, Growth):
         # snake = cast.get_first_actor("snakes")
         # segments = snake.get_segments()
 
-        cast._handle_growth(cast)
+        # growth._handle_growth(cast)
 
         cycles = cast.get_actors("cycles")
         cycle1 = cycles[0]
