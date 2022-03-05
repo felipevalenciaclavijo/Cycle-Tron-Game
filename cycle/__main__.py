@@ -36,6 +36,8 @@ def main():
     script.add_action("input", ControlActorsAction(keyboard_service))
     script.add_action("update", MoveActorsAction())
     script.add_action("update", HandleCollisionsAction())
+    # Here added the action HandleGrowthAction to the script in order
+    # for it to work as update actions execute
     script.add_action("update", HandleGrowthAction())
     script.add_action("output", DrawActorsAction(video_service))
     
