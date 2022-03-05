@@ -79,4 +79,4 @@ class HandleCollisionsAction(Action):
             for segment in segments:
                 segment.set_color(constants.WHITE)
             food.set_color(constants.WHITE)"""
-            pass
+        pass
