@@ -1,4 +1,3 @@
-# from game.casting.actor import Actor
 from game.scripting.action import Action
 
 

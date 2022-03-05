@@ -26,7 +26,6 @@ root                    (project root folder)
     +-- casting           
       +-- actor                     (traits to use for actors)
       +-- cast                      (keeps track of what is in play)
-      +-- food  CHANGE?             ()
       +-- score                     (keeps track of score)
       +-- cycle                     (creates cycles)
     +-- directing         
@@ -36,6 +35,7 @@ root                    (project root folder)
       +-- control_actors_action     (controls snake)
       +-- draw_actors_action        (create actors in game space)
       +-- handle_collisions_action  (control what happens when when things collide)
+      +-- handle_growth_action      (control the segment growth of each cycle)
       +-- move_actors_action        (control movement in game space)
       +-- script                    (keep track of actions)
     +-- services

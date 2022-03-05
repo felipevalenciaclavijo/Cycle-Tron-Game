@@ -1,11 +1,8 @@
 from game.scripting.action import Action
 
-
-# TODO: Implement MoveActorsAction class here! 
-
 class MoveActorsAction(Action):
 
-# Override the execute(cast, script) method as follows:
+    # Override the execute(cast, script) method as follows:
     def execute(self, cast, script):
         # 1) get all the actors from the cast
         actors = cast.get_all_actors()
