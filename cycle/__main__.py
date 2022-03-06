@@ -1,7 +1,4 @@
 import constants
-# from cycle.constants import GREEN
-from constants import GREEN
-from constants import RED
 
 from game.casting.cast import Cast
 from game.casting.score import Score

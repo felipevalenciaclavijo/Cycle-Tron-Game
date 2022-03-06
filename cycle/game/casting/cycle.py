@@ -79,3 +79,6 @@ class Cycle(Actor):
             segment.set_text(text)
             segment.set_color(self._cycle_color)
             self._segments.append(segment)
+    
+    def set_color(self, color):
+        self._cycle_color = color
