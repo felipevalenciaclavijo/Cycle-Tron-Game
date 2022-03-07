@@ -44,7 +44,7 @@ class HandleCollisionsAction(Action):
         segments2 = cycle2.get_segments()[1:]
         
         for segment in segments1:
-            if head2.get_position().equals(segment.get_position()):
+            if head1.get_position().equals(segment.get_position()):
                 self._is_game_over = True
 
         for segment in segments2:
@@ -52,7 +52,7 @@ class HandleCollisionsAction(Action):
                 self._is_game_over = True
         
     def _handle_game_over(self, cast):
-        """Shows the 'game over' message and turns the snake and food white if the game is over.
+        """Shows the 'game over' message and turns the cycles white if the game is over.
         
         Args:
             cast (Cast): The cast of Actors in the game.

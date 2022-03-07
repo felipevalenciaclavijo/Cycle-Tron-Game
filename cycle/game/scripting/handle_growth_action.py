@@ -13,7 +13,7 @@ class HandleGrowthAction(Action):
     """
     def __init__(self):
         "initializes count to add a segment to tail in increments"
-        self._count = 0       
+        self._count = 0  
 
     def execute(self, cast, script):
         """Grows the cycle at an increment of 40 execute update actions.
