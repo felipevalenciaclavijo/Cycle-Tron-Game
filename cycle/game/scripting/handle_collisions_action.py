@@ -1,4 +1,5 @@
 import constants
+# from cycle.constants import WHITE
 from game.casting.actor import Actor
 from game.scripting.action import Action
 from game.shared.point import Point
@@ -48,7 +49,7 @@ class HandleCollisionsAction(Action):
                 self._is_game_over = True
 
         for segment in segments2:
-            if head2.get_position().equals(segment.get_position()):
+            if head1.get_position().equals(segment.get_position()):
                 self._is_game_over = True
         
     def _handle_game_over(self, cast):
@@ -61,6 +62,8 @@ class HandleCollisionsAction(Action):
             cycles = cast.get_actors("cycles")
             cycle1 = cycles[0]
             cycle2 = cycles[1]
+            cycle1.set_color(constants.WHITE)
+            cycle2.set_color(constants.WHITE)
             cycle1_segments = cycle1.get_segments()
             cycle2_segments = cycle2.get_segments()
 
