@@ -5,13 +5,13 @@ from game.shared.point import Point
 
 class Winner(Actor):
     """
-    A record of points made or lost. 
+    A record of who won the game. 
     
     The responsibility of Winner is to keep track of who has won the game. Client should use get_text() to get a string 
     representation of who is currently winning.
 
     Attributes:
-        _points (int): The points earned in the game.
+        _winner : Gives the name of the winner
     """
     def __init__(self):
         super().__init__()
@@ -19,10 +19,10 @@ class Winner(Actor):
         
 
     def declare_winner(self, winner):
-        """Adds the given points to the score's total points.
+        """Declares which cycle won the game.
         
         Args:
-            points (int): The points to add.
+            _winner: The name of the winner.
         """
         self._winner = winner
         self.set_text(f"Winner: {self._winner}")
