@@ -1,4 +1,6 @@
+import constants
 from game.casting.actor import Actor
+from game.shared.point import Point
 
 
 class Winner(Actor):
@@ -24,3 +26,7 @@ class Winner(Actor):
         """
         self._winner = winner
         self.set_text(f"Winner: {self._winner}")
+
+        x = int((constants.MAX_X / 2) - 43)
+        y = int((constants.MAX_Y / 2) + 30) 
+        self._position = Point(x, y)
