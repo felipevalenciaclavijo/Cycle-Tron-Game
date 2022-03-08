@@ -22,7 +22,7 @@ def main():
     cast = Cast()
     cast.add_actor("cycles", Cycle(constants.RED))
     cast.add_actor("cycles", Cycle(constants.GREEN))
-    cast.add_actor("winner", Winner())
+    cast.add_actor("winners", Winner())
    
     # start the game
     keyboard_service = KeyboardService()
