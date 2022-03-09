@@ -61,13 +61,12 @@ class Cycle(Actor):
             y = int(constants.MAX_Y / 2)
 
         else:
-            x = int(constants.MAX_X / 4)
-            y = int(constants.MAX_Y / 4)
-
+            x = int(constants.MAX_X / 2)
+            y = int(constants.MAX_Y / -2)
 
         for i in range(constants.CYCLE_LENGTH):
-            position = Point(x - i * constants.CELL_SIZE, y)
-            velocity = Point(1 * constants.CELL_SIZE, 0)
+            position = Point(-y, x + i * constants.CELL_SIZE)
+            velocity = Point(0, 1 * -constants.CELL_SIZE)
             text = "@" if i == 0 else "#"
             
             segment = Actor()
