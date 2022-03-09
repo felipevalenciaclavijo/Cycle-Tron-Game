@@ -28,6 +28,7 @@ root                    (project root folder)
       +-- cast                      (keeps track of what is in play)
       +-- score                     (keeps track of score)
       +-- cycle                     (creates cycles)
+      +-- winner                    (determines the winner)
     +-- directing         
       +-- director                  (director of game)
     +-- scripting
